@@ -24,6 +24,7 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 * [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
 
+
 ### Commits
 
 Having an active and healthy commit history on GitHub is important for your future job search. It is also extremely important for making sure your work is saved in your repository. If something breaks, committing often ensures you are able to go back to a working version of your code.
