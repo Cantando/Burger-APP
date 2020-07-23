@@ -4,7 +4,7 @@ $(function() {
       var newDevour = $(this).data("newdevour");
   
       var newDevourState = {
-        sleepy: newDevour
+        devour: newDevour
       };
   
       // Send the PUT request.
@@ -25,8 +25,8 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#ca").val().trim(),
-        sleepy: $("[name=devour]:checked").val().trim()
+        name: $("#bu").val().trim(),
+        devour: 0
       };
   
       // Send the POST request.
@@ -36,21 +36,6 @@ $(function() {
       }).then(
         function() {
           console.log("created new burger");
-          // Reload the page to get the updated list
-          location.reload();
-        }
-      );
-    });
-  
-    $(".delete-burger").on("click", function(event) {
-      var id = $(this).data("id");
-  
-      // Send the DELETE request.
-      $.ajax("/api/burgers/" + id, {
-        type: "DELETE"
-      }).then(
-        function() {
-          console.log("deleted burger", id);
           // Reload the page to get the updated list
           location.reload();
         }
